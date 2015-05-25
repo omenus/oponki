@@ -1,0 +1,35 @@
+@import 'bootstrap_lib/variables';
+@import 'bootstrap_lib/mixins';
+
+/********************************************************
+			System Tool SP 
+********************************************************/
+
+/* 1.Back To Top
+--------------------------------------------------------- */
+.backtotop {
+    background-color: #777;
+    width: 45px;height:45px; bottom: 20px;right: 10px;min-height: 42px;border-radius:0%;
+    overflow: hidden; z-index: 40;position: fixed;display: block;text-align: center;
+    @include transition(all 0.5s ease-in-out 0s); @include scale(1);  @include opacity(100);
+    
+    &.hidden-top {bottom: -100px;  @include scale(0);  @include opacity(0);}
+   
+    i{font-size: 30px; line-height:40px; margin: 0 ;color: white;}
+}
+
+/* 2.Menu Fixed
+--------------------------------------------------------- */
+/*.menu-fixed{position:fixed;width:100%;z-index:90;top:0;
+	@include animation(animate-translate-top 1s);
+	&.animate-children{
+		#header_logo{@include animation(animate-translate-top 1.2s);}
+		#block_top_menu{@include animation(animate-translate-top 1.5s);}
+	}
+}*/
+@include keyframes(animate-translate-top) {
+	0% {@include translate(0, -150px)}
+	100% {@include translate(0, 0px)}
+}
+
+

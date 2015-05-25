@@ -1,0 +1,60 @@
+
+@import '../../bootstrap_lib/variables';
+
+#currencies-block-top {
+	z-index: 20;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin-right: -2px;
+	form{margin: 0}											
+	span.firstWord {
+		display: none;
+	}
+	div.current {
+		
+		padding: 7px 10px 8px;
+		color: $light-text-color;
+		cursor: pointer;
+		color: #666;
+		text-align: left;
+		background: #eeeeee;
+		&:hover, &.active {
+			background: #2b2b2b;color: white;
+		}
+		&:after {
+			content: "\f0d7";
+			font-family: $font-icon;
+			font-size: 14px;
+			line-height: 18px;
+			vertical-align: -2px;
+			padding-left: 8px;
+			
+		}
+		span {vertical-align: middle;}
+	}
+	ul {
+		display: none;
+		position: absolute;
+		top: 35px;
+		left: 0;
+		width: 100%;
+		background: white;
+		border-style: solid;
+		border-width: 1px 1px 5px;
+		text-align: left;
+		z-index: 2;
+		li {
+			margin-bottom: 1px;
+			line-height: 35px;
+			a,
+			> span {
+				padding: 0 10px 0 12px;
+				display: block;
+			}
+			&.selected, &:hover a {
+				background: #F1F1F1;
+			}
+		}
+	}
+}

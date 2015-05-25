@@ -1,0 +1,31 @@
+@import 'bootstrap_lib/variables';
+
+/* ************************************************************************************************
+	Categories Page Styles
+************************************************************************************************ */
+.content_scene_cat {margin-bottom: 20px;
+	.content_scene {
+		h1{text-transform: uppercase;display: inline-block;font-size: 24px;margin:0px ;font-weight: 600;}
+		.rte{
+			img {margin:10px 0px;}
+		}
+	}
+}
+
+
+/* ************************************************************************************************
+Sub Categories Styles
+************************************************************************************************ */
+
+#subcategories {margin-bottom: 50px;
+	.subcategory-heading{text-transform: uppercase; font:600 18px/22px "Open Sans",sans-serif;}
+	.subcategories-box{border: 1px solid #e6e6e6;padding: 10px;margin-bottom: 20px;transition: 0.3s all ease 0s;background: #fff;
+		.cat_desc {
+			img {height: auto;margin-top: 10px;}
+			p {margin: 0px;}
+		}
+	}
+	.subcategory-name{color: #333;transition: 0.3s all ease 0s;}
+}
+
+

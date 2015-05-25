@@ -1,0 +1,210 @@
+@import '../../../bootstrap_lib/variables';
+@import '../../../bootstrap_lib/mixins';
+
+/*** ESSENTIAL STYLES ***/
+#block_top_menu > ul.sf-menu {position: relative;}
+.sf-right {}
+.sf-menu,
+.sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu {
+	
+	padding: 0;
+}
+.sf-menu ul {
+	position: absolute;
+	top: -999em;
+	background: $light-background;
+	
+}
+.sf-menu ul li {
+	width: 100%;
+}
+.sf-menu li:hover {
+	visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu > li {
+	float: left;
+	margin-right: 1px;
+	> a { 
+		font: 16px/40px $font-custom;
+		text-transform: lowercase;
+		color: #CF671B;
+		display: block;
+		padding: 10px 20px;
+		position: relative;z-index: 1;
+		&:before{
+			position: absolute;top: 0; left: 0; z-index: -1;content: ""; width: 100%; height: 100%;display: block;
+			@include opacity(0);
+			@include transition(all 0.3s ease 0s);
+		}
+		&.menu-home-link,
+		&.menu-home-link:hover {
+			color: #fff;
+			font-weight:bold;
+			font-size: 18px;
+			opacity: 0.9;
+			.fa{ display:inline-block;
+				margin:0px 0px 0px 0px;
+				font-size: 13.5px;
+			}
+		}
+		&.menu-home-link:hover {
+			opacity: 1.0
+		}
+		
+	}
+	&.sfHover > a,
+	> a:hover,
+	&.sfHoverForce > a {
+		color: $light-text-color;
+		&:before{@include opacity(1);}
+	}
+}
+.sf-menu li li li a {
+	display: block;
+	color: #666;
+	padding:0px 0px;
+	transition: 0.3s all ease 0s;
+	position: relative;
+	margin-bottom: 2px;
+	&:before {content: "";height: 100%;width: 3px;position: absolute;left: 10px;top: 0px;opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";transition: 0.3s all ease 0s;}
+	&:hover {padding-left: 12px;
+		&:before {left: 0;opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+	}
+}
+.sf-menu li ul {
+	display: none;
+	left: 0;
+	top: 100%; /* match top ul list item height */
+	z-index: 99;
+	padding: 0 0px 18px 0px;
+	
+	
+}
+.sf-menu li > ul > li > ul {
+	position: static;
+	display: block !important;
+	opacity: 1 !important;
+	background: none;
+	
+	.fa{float:right;display:block;font-size:16px;margin-right:5px;font-size: 12px;color: #999;
+		&:before{content:"\f105";font-size: 14px;}
+	}
+}
+.sf-menu li li ul li{position: relative;padding: 5px 0px;}
+.sf-menu li li li ul {
+	padding: 10px 20px;
+	position: absolute;
+	display: none !important;
+	border-style: solid;
+	background:white;
+	border-width: 1px 1px 5px 1px;
+}
+
+.sf-menu li li li:hover ul{display: block !important;}
+
+.sf-menu li li li ul {
+	width: 250px;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top: -999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left: 95%; /* match ul width */
+	top: 0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top: -999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left: 95%; /* match ul width */
+	top: 0;
+}
+
+.sf-menu > li > ul {
+	padding:  20px ;
+	width: 100%;
+	
+	border-width: 0 1px 5px 1px;
+	border-style: solid;
+	> li {
+		> a {
+			font-weight: bold;
+			margin-bottom:12px;
+			display:block;
+			color: $base-text-color;
+			
+		}
+		
+	}
+}
+.sf-menu > li > ul > li {
+	float: left;
+	width: 25%;
+	padding-right: 15px;
+	.fa{display:none;}
+	
+	
+}
+.sf-menu > li > ul > li#category-thumbnail {
+	width: 100% !important;
+	float: none;
+	clear: both;
+	overflow: hidden;
+	padding-right: 0;
+	> div {
+		float: left;
+		padding-left: 10px;
+		width: 33.333%;
+		
+		&:first-child {
+			padding-left: 0;
+		}
+		img {
+			max-width: 100%;
+			display: block;
+		}
+	}
+}
+.cat-title {
+	display: none;
+	
+}
+
+
+#block_top_menu {
+	.category-thumbnail {
+		clear: both;
+		width:100%;
+		float:none;
+		div {
+			float: left;
+			width: 100 / 3 * 1%;
+			padding: 0 1px 0 0;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+	li.category-thumbnail {
+		padding-right: 0;
+	}
+}
+ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {left: 90%;right: auto;}
+
+.index {
+	.sf-menu > li:first-child > a:before {opacity: 1;width: 100%;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+}
+
+.sf-menu  li.sf-haveshild > a:after {display: inline-block;content: "\f107";font-family: fontawesome;margin: 0px 5px;font-size: 14px;line-height: 37px;}
+.sf-menu  li.home > a:after {display: inline-block;content: "\f107";font-family: fontawesome;margin: 0px 5px;font-size: 14px;line-height: 37px;}
+.sf-menu li li.sf-haveshild > a:after {display: none;}
+.sf-menu li li li.sf-haveshild > a:after {content: "\f105";display: inline-block;position: absolute;right: 0;line-height: inherit;}

@@ -1,0 +1,8 @@
+#cmsinfo_block {
+  padding: 50px 0px;
+  overflow: hidden;
+  margin: 10px 0px 30px; }
+  #cmsinfo_block h3 {
+    font-size: 18px;
+    color: #333;
+    text-transform: uppercase; }

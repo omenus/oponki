@@ -1,0 +1,39 @@
+#manufacturers_slider {
+  overflow: hidden;
+  padding: 20px 0 20px 0;
+}
+#manufacturers_slider .flexslider_carousel {
+  position: relative;
+  z-index: 11;
+}
+#manufacturers_slider .flexslider_carousel li {
+  padding: 0 5px;
+  list-style-type: none;
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+#manufacturers_slider .flexslider_carousel li img {
+  zoom: 1;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+#manufacturers_slider .direction-nav {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+#manufacturers_slider .direction-nav a {
+  display: block;
+  text-indent: -999em;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  position: absolute;
+  top: 18px;
+  transition: 0.3s all ease 0s;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=manufactuterslider.css.map */

@@ -1,0 +1,64 @@
+.header_user_info {
+  display: inline-block;
+  vertical-align: top;
+}
+.header_user_info ul.links {
+  list-style: none;
+  margin: 0;
+}
+.header_user_info ul.links li {
+  display: inline-block;
+  padding: 8px 10px;
+  position: relative;
+}
+.header_user_info ul.links li a {
+  color: #777;
+}
+.header_user_info ul.links li .fa {
+  font-size: 12px;
+  color: #777;
+}
+.header_user_info ul.links li ul.dropdown-link-account {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  left: 2px;
+  opacity: 0;
+  padding: 0px 10px;
+  top: 50px;
+  transition: top 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 180px;
+  z-index: -1;
+  text-align: left;
+}
+.header_user_info ul.links li ul.dropdown-link-account li {
+  display: block;
+  padding: 0px;
+}
+.header_user_info ul.links li ul.dropdown-link-account li a {
+  display: block;
+  padding: 7px 0px;
+  border-bottom: solid 1px #efefef;
+  font-size: 12px;
+}
+.header_user_info ul.links li ul.dropdown-link-account li:last-child a {
+  border-bottom: none;
+}
+.header_user_info ul.links li.first {
+  padding: 8px 10px 9px;
+}
+.header_user_info ul.links li.first .fa {
+  font-size: 14px;
+  margin: 0px 5px;
+  vertical-align: middle;
+}
+.header_user_info ul.links li.first .fa.fa-user {
+  margin: 0px 5px 2px;
+}
+.header_user_info ul.links li.first:hover ul.dropdown-link-account {
+  top: 36px;
+  z-index: 99;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=blockuserinfo.css.map */

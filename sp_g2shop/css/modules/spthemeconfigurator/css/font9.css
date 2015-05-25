@@ -1,0 +1,21 @@
+@import url('//fonts.googleapis.com/css?family=Open+Sans');
+@import url('//fonts.googleapis.com/css?family=Old+Standard+TT');
+
+
+body {font-family: 'Open Sans', sans-serif !important;}
+#quantity_wanted {font-family: 'Open Sans', sans-serif !important;}
+.product-name {font-family: 'Open Sans', sans-serif !important;}
+button.detail {font-family: 'Open Sans', sans-serif !important;}
+#button_order_cart {font-family: 'Open Sans', sans-serif !important;}
+
+
+h1, h2, h3, h4, h5 {font-family: 'Old Standard TT', sans-serif !important;}
+.cart_button {font-family: 'Old Standard TT', sans-serif !important;}
+.moreinfo_block ul.nav-tabs li a {font-family: 'Old Standard TT', sans-serif !important;}
+.exclusive {font-family: 'Old Standard TT', sans-serif !important;}
+.title_block {font-family: 'Old Standard TT', sans-serif !important;}
+.page-title-slider {font-family: 'Old Standard TT', sans-serif !important;}
+.newsletter_home button {font-family: 'Old Standard TT', sans-serif !important;}
+.shopnow {font-family: 'Old Standard TT', sans-serif !important;}
+.sf-menu > li > a {font-family: 'Old Standard TT', sans-serif !important;}
+.sp-cat-title-parent {font-family: 'Old Standard TT', sans-serif !important;}

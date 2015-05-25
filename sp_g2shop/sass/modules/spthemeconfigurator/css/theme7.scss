@@ -1,0 +1,309 @@
+
+
+$background:#ec87c0;
+$linkColor:#ec87c0;
+$borderColor:#ec87c0;
+$color1-style1:#fff;
+
+
+//-------- GLOBAL
+a:hover, a:focus{color: $linkColor;}
+.button:hover,.btn-default:hover, input[type="submit"]:hover{background-color: $linkColor;color: white;}
+.button:focus,.btn-default:focus, input[type="submit"]:hover{background-color: $linkColor;color: white;}
+h3.mod-title .fa{background: $linkColor;}
+a.btn-default,.button, input.button_mini, input.button_small, input.button, input.button_large, input.button_mini_disabled, input.button_small_disabled, input.button_disabled, input.button_large_disabled, input.exclusive_mini, input.exclusive_small, input.exclusive, input.exclusive_large, input.exclusive_mini_disabled, input.exclusive_small_disabled, input.exclusive_disabled, input.exclusive_large_disabled, a.button_mini, a.button_small, a.button, a.button_large, a.exclusive_mini, a.exclusive_small, a.exclusive, a.exclusive_large, span.button_mini, span.button_small, span.button, span.button_large, span.exclusive_mini, span.exclusive_small, span.exclusive, span.exclusive_large {
+	background: $background !important;
+     &:hover {background: darken($background,10%) !important;}
+}
+
+
+//-------- CMS
+
+.sf-menu li li li a:before {color: $linkColor;}
+//-------- HEADER
+.sf-menu > li.sfHover > a,
+.sf-menu > li > a:hover,
+.sf-menu > li.sfHoverForce > a{background: $background;}
+.sf-menu .submenu-container{border-color: transparent $borderColor $borderColor $borderColor;}
+.sf-menu li li li ul{border-color:  $borderColor ;}
+.sf-menu li li li a:hover,
+.sf-menu > li > ul > li > a:hover{color:$linkColor;}
+
+.shopping_cart > a:first-child{background: $background;}  
+#currencies-block-top div.current:hover,#currencies-block-top div.current.active,
+#languages-block-top div.current:hover,#languages-block-top div.current.active{background: $background !important;color: white;border-color: $linkColor !important;}
+.cart_block .cart-buttons a{background: $background;}
+
+
+#languages-block-top ul, #currencies-block-top ul {border-color: $linkColor;}
+
+
+//-------- COLUMNS
+.newsletter_home .button{background:$background;}
+.sp-twitter-slider .ts-slider-wrap .ts-control .ts-ctr:hover{background-color:$background;}
+.sp-twitter-slider a:hover{color: $linkColor !important; }
+.tags_block .block_content a:hover{background:$background;border-color: $linkColor;}
+//-------- LEFT
+
+#categories_block_left ul.tree li:hover{
+      > a,
+      > .grower {color:$linkColor;}
+}
+
+
+//-------- FOOTER
+
+
+.footer-container a:hover{color:$linkColor;}
+
+
+//-------- CATEGORY
+
+.content_sortPagiBar .display li.selected a,
+.content_sortPagiBar .display_m li.selected a{color:$linkColor;border-color: $linkColor;}
+.content_sortPagiBar .display li a:hover {border-color: $linkColor;}
+ul.product_list .product-container:hover{
+      h5 > a{color: $linkColor;}
+      
+      
+}
+
+//-------- PRODUCT DETAIL
+div.moreinfo_block ul.nav-tabs > li:before {background: $background;}
+#thumbs_list li a:after {background: $background;}
+span.view_scroll_spacer > a:hover{background: $background;}
+
+//-------- PAIMENT - PAGE ORDER
+#order_step li.step_current{background: $background;}
+#order_step li a:hover{background: $background;}
+
+.payment_module a:hover, .payment_module a:focus,
+.payment_module a:active {border: 1px solid $borderColor;}
+
+//-------- Related Products--------//
+#crossselling_list .bx-wrapper, .accessories-block .block_content .bx-wrapper, #productscategory_list .bx-wrapper {max-width: 100% !important;}
+
+
+//------- Product Comparison -----//
+#product_comparison .ajax_block_product h5 a:hover {color: $linkColor;}
+#layer_cart .cross:hover {color: $linkColor;}
+
+//-------More-----------------//
+
+#availability_statut #availability_value, ul.product_list .availability .available-now {background: url(../../../../img/pink/instock.png) no-repeat 0 0;}
+
+#smartblogcat .sdsarticleCat:hover h2.sdstitle_block a {color: $linkColor;}
+#submitComment:hover, #submitComment:focus {background: $linkColor;border-color: $linkColor;}
+#subcategories .subcategories-box:hover {border-color: $linkColor;
+      .subcategory-name {color: $linkColor;}
+}
+#smartblogcat .sdsarticleCat .blog-info .comment a:hover {color: $linkColor;}
+.pagination > li > a:hover, .pagination > li > span:hover,
+.pagination > li > a.page-active, .pagination > li > span.page-active,
+.pagination > li > a:focus, .pagination > li > span:focus {color: #fff;border-color: $linkColor;background: $background;}
+#homepage-slider .bx-wrapper .bx-controls-direction {
+      a.bx-next, a.bx-prev {
+            &:hover {background-color: $background;}
+      }
+}
+.backtotop:hover {background-color: $background;}
+.top-pagination-content ul.pagination li > a:hover span, .bottom-pagination-content ul.pagination li > a:hover span {background: $background;}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+      b, .fa {color: $linkColor;}
+}
+.top-pagination-content ul.pagination li.active > span span, .bottom-pagination-content ul.pagination li.active > span span {background: $background;color: #fff;}
+div.sp-newproducts .slider .vpo-wrap .vp .item .item-wrap .item-img .quick-view-wrapper-mobile {background: $background;}
+ul.product_list .product-image-container .quick-view-wrapper-mobile {background: $background;}
+#header .cart_block {border: solid 1px $linkColor;}
+#header .cart_block a, #header .cart_block .product-atributes a {
+     &:hover {color: $linkColor;}
+}
+
+.cart_block .cart-images:hover {border-color: $linkColor;}
+#productscategory_list ul.bxslider li.product-box:hover .product-name a {color: $linkColor;}
+
+.products-block li .products-block-image .number {background: $background;}
+
+/*---------------------------------------------------------------------------*/
+.header_user_info ul.links li a:hover {color: $linkColor;
+     .fa {color: $linkColor;}
+}
+#languages-block-top ul li a:hover {color: $linkColor;}
+#currencies-block-top ul li a:hover {color: $linkColor;}
+.price {color: $linkColor;}
+.products-block li .product-content h5 a:hover {color: $linkColor;}
+.cart_block .cart_block_list .remove_link a:hover:before,
+.cart_block .cart_block_list .ajax_cart_block_remove_link:hover:before {color: $linkColor;}
+.breadcrumb .here {background:url("../../../../img/pink/bg_here.png") no-repeat 0px 0px;color: $linkColor; }
+.category-name {color: $linkColor;}
+ul.product_list .button-container .cart_button {background: $background;}
+ul.product_list .button-container > div a:hover {background-color: $background;}
+div.sp-newproducts .slider .vpo-wrap .vp .item .item-wrap .button-container > div a:hover {background-color: $background;}
+div.sp-sp-cat .spcat-wrap .spcat-items-container .spcat-items .spcat-item .item-inner .button-container > div a:hover {background-color: $background;}
+.top-pagination-content ul.pagination li.active > span, .bottom-pagination-content ul.pagination li.active > span {border-color: $linkColor !important;}
+.top-pagination-content ul.pagination li > a, .top-pagination-content ul.pagination li > span,
+.bottom-pagination-content ul.pagination li > a, .bottom-pagination-content ul.pagination li > span {
+      &:hover {border-color: $linkColor !important;}
+}
+#thumbs_list li a {
+      &:hover, &.shown {border-color: $linkColor;}
+}
+span.view_scroll_spacer > a:hover {background: $background;border-color: $linkColor;}
+.pb-left-column #image-block a.zoomImg:hover {background: $background;color: #fff;border-color: $linkColor;}
+div.moreinfo_block ul.nav-tabs > li a:hover {background: lighten($background,15%);border-color:lighten($background,15%);}
+div.moreinfo_block ul.nav-tabs > li.active a {background: $background;border-color: $linkColor;}
+div.moreinfo_block .tab-content {border-top: solid 2px $linkColor;}
+.box-cart-bottom .button {background: $background;}
+h1.page-heading {color: $linkColor;}
+div.page-heading h1 {color: $linkColor;}
+.block .title_block:after, .block h4:after {background: $background;}
+.exclusive:hover {background: $background;color: #fff;}
+.blockmanufacturer ul li a:hover {background: $background;border-color: $linkColor;}
+div.sp-manu-slider, div.sp-new-products {
+      .page-button.top .control-button li:hover {background: $background;}
+}
+div.intro-bottom .shipping, div.intro-bottom .credit, div.intro-bottom .promotion, div.intro-bottom .support {
+      &:hover {
+            h2 {color: $linkColor;}
+            .icon {background-color: $background;
+                  &:after {border-color: transparent transparent transparent $linkColor;}
+            }
+      }
+}
+.shopping_cart > a:first-child {background: $background;
+      &:before {border-right: solid 1px darken($linkColor,10%);}
+      &:hover {
+            &:before {background-color: darken($linkColor,10%);}
+      }
+}
+#search_block_top #searchbox .button-search {background: $background;
+     &:hover {background-color: darken($background,10%);}
+}
+.header-bottom {background: $background;}
+.sf-menu > li > a:before {background: darken($background,10%);}
+div.bonus-menu .b-label {background-image: url(../../../../img/pink/bg_here.png);color: $linkColor;}
+div.bonus-menu ul.bmenu li a:hover {color: $linkColor;}
+div.introduction .shipping, div.introduction .saleoff, div.introduction .smiling {
+      &:hover .intro h2 {color: $linkColor;}
+}
+div.introduction .icon {background-color: $background;}
+div.introduction .icon:after {border-color: transparent transparent transparent $linkColor;}
+div.sp-newproducts .slider .vpo-wrap .vp .item .item-wrap .button-container .cart_button {background: $background;}
+div.sp-newproducts div.page-title-slider h1 {color: $linkColor;border: solid 1px $linkColor;padding: 1px;
+      span {padding: 6px 17px;border: solid 1px $linkColor;display: inline-block;}
+}
+#homepage-slider .homeslider-description .shopnow {background: lighten($background,5%);
+      &:hover {color: $linkColor;}
+}
+.products-block li:hover .product-content h5 a {color: $linkColor;}
+
+.sf-menu li li li a:before {background: $background;}
+.products-block .button_large:hover {background: $background;color: #fff;}
+.lastestnews .sdsblog-box-content .sds_blog_post:hover {
+     .sds_post_title a {color: $linkColor;}
+     span.date_added {background: $background;}
+}
+div.happy-clients {
+     h3:after {background: $background;}
+     .content .author strong {color: $linkColor;}
+}
+.contact-infos .list-contact .label .fa {color: $linkColor;}
+ul.social-block a:hover {background: $linkColor;}
+div.sp-sp-cat .spcat-wrap .spcat-items-container .spcat-items .spcat-item .item-inner {
+     .item-image .quick-view-wrapper-mobile {background: $background;}
+     .button-container .cart_button {background: $background;}
+     &:hover .item-info .item-title a {color: $linkColor;}
+}
+div.sp-sp-cat .spcat-wrap .category-wrap-cat .slider .cat_slider_inner .item {
+     &:after {background: $background;}
+     &:hover .cat_slider_title a {color: $linkColor;}
+}
+div.sp-sp-cat .spcat-wrap .spcat-tabs-container .spcat-tabs li.spcat-tab {
+     &.tab-sel,  &:hover {border-color: $linkColor;background: $background;}
+     &:after {border-color: $linkColor transparent transparent  transparent }
+}
+div.sp-sp-cat .spcat-wrap .spcat-items-container .spcat-items .spcat-loadmore .spcat-loadmore-btn {color: $linkColor;background: url(../../../../img/pink/icon_loadmore.png) no-repeat right center;}
+div.moreinfo_block .tab-content .product-box:hover {
+     .product-name a {color: $linkColor;}
+     .button {background: $background;}
+}
+//Contact Info
+.contact-infos .list-contact a:hover {color: $linkColor;}
+
+#block_top_menu .cat-title {background: $background;}
+
+.price-percent-reduction {background: $background;}
+#header .cart_block .price {color: $linkColor;}
+.box-info-product #wishlist_button {background-color: $background;
+     &:hover {background-color: darken($background,10%);}
+}
+.box-cart-bottom .button:hover {background: darken($background,10%); }
+div.moreinfo_block .tab-content .product-box .button {background: $background;
+     &:hover {background: darken($background,10%);}
+}
+#categories_block_left li li a.selected {color: $linkColor;}
+
+//-------- RTL Language--------//
+.lang_ar {
+     //Global
+     a:hover, a:focus{color: $linkColor;}
+     .button:hover, button:focus {background: $background;color: #fff;outline: none;}
+     
+     //Header
+     .shopping_cart > a:first-child {
+          &:before {border-left: solid 1px darken($linkColor,10%);}
+          .ajax_cart_quantity {padding: 0 15px 0 3px;}
+          &:hover {color: #fff;}
+     }
+     
+     //Introdution Top
+     div.introduction .icon:after {border-color: transparent $linkColor transparent  transparent;}
+     
+     //Module SP Newproducts
+     .price {color: $linkColor;}
+     .comments_note span, .star_content {float: right;}
+     
+     //Introduction Bottom
+     div.intro-bottom {
+          .shipping, .credit, .promotion, .support {
+               &:hover {
+                    .icon:after {border-color:transparent $linkColor transparent transparent }
+               }
+          }
+     }
+     
+     //Breadcrumb
+     .breadcrumb .here {background-image: url(../../../../img/pink/rtl/bg_here.png);margin: 0px 0px 0px 10px;}
+     
+     //Bonus Menu
+     div.bonus-menu .b-label {background-image: url(../../../../img/pink/rtl/bg_here.png);}
+     
+     
+     
+     //Products Listing
+     .top-pagination-content ul.pagination li.active > span span,
+     .bottom-pagination-content ul.pagination li.active > span span {background: $background;}
+     .pagination > li > a:hover, .pagination > li > span:hover,
+     .pagination > li > a:focus, .pagination > li > span:focus {color: #fff;}
+     .top-pagination-content ul.pagination li > a:hover span,
+     .bottom-pagination-content ul.pagination li > a:hover span {background: $background;}
+     
+}
+
+//Responsive
+/* 5.Extra small devices Phones
+================================================== */
+@media (max-width: 767px){
+     .shopping_cart > a:first-child {background: darken($background,10%);
+          .ajax_cart_no_product, .ajax_cart_quantity {background: $background;}
+     }
+     #search_block_top #searchbox .button-search {background-color: darken($background,10%);}
+     .header_user_info {background-color: darken($background,10%);}
+}
+
+/* 5.Extra small devices Phones
+================================================== */
+@media (max-width: 479px){
+     div.sp-sp-cat .spcat-wrap .spcat-tabs-container .spcat-tabs-wrap {background: $background;}
+     div.sp-sp-cat .spcat-tabs-container .spcat-tabs-wrap.spcat-selectbox span.spcat-tab-arrow {background: darken($background,10%);}
+}

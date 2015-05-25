@@ -1,0 +1,17 @@
+.socialsharing_product {
+	.social-sharing{width: 36px;height: 36px;border-radius: 50%;padding: 0;text-align: center;line-height: 36px;margin-right: 10px;border: none;text-align: center;transition: 0.3s all ease 0s;
+		.fa{margin: 0;font-size: 18px;color: #fff;transition: 0.3s all ease 0s;}
+		&.btn-twitter{background: #4DC5F7;
+			&:hover {background: #1092c8;}
+		}
+		&.btn-facebook{background: #4C6BAB;
+			&:hover {background: #184bb6;}
+		}
+		&.btn-google-plus{background: #EA5F62;
+			&:hover {background: #e8191d;}
+		}
+		&.btn-pinterest{background: #4DC5F7;
+			&:hover {background: #1092c8;}
+		}
+	}
+}

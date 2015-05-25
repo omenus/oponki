@@ -1,0 +1,58 @@
+@import '../../bootstrap_lib/variables';
+
+#languages-block-top {
+	z-index: 2;
+	display: inline-block;
+	position: relative;
+	 vertical-align: top;
+	margin: 0;							
+	span.firstWord {
+		display: none;
+	}
+	div.current {
+
+		padding:8px 10px 9px;
+		background: #eeeeee;
+		cursor: pointer;
+		strong {
+			color: #666;
+		}
+
+		&:after {
+			content: "\f0d7";
+			font-family: $font-icon;
+			font-size: 12px;
+			line-height: 18px;
+			padding-left: 5px;
+			
+		}
+		
+	}
+	ul {
+		display: none;
+		position: absolute;
+		top: 35px;
+		left: 0;
+		right: auto;
+		width: 100%;
+		background: white;
+		border-style: solid;
+		border-width: 1px 1px 5px;
+		z-index: 2;
+		text-align: left;
+		li {
+			margin-bottom: 1px;
+			line-height: 35px;
+			
+			a,
+			> span {
+				padding: 0 10px 0 12px;
+				display: block;
+				
+			}
+			&.selected, &:hover a {
+				background: #F1F1F1;
+			}
+		}
+	}
+}

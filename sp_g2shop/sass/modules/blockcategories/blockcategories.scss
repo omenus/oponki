@@ -1,0 +1,114 @@
+@import '../../bootstrap_lib/variables';
+@import '../../bootstrap_lib/mixins';
+
+#categories_block_top {
+  clear: both;
+  position: relative;
+  top: 30px;
+  .sf-menu {
+    position: relative;
+    > li {
+      position: static;
+      > ul {
+        width: 100%;
+        top: 60px;
+        margin: 0 20px;
+        > li {
+          display: block;
+          float: left;
+          width: 20%;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          padding: 0 10px;
+        }
+        > .category_thumb {
+          display: block;
+          clear: both;
+          overflow: hidden;
+          width: 100%;
+          img {
+            display: inline-block;
+            width: 33%;
+          }
+        }
+      }
+      h4 {
+        a {
+          font-size: 1.1em;
+          &:before {
+            display: none;
+          }
+        }
+      }
+      .main-level-submenus {
+        position: relative;
+        display: block !important;
+        visibility: visible !important;
+        top: 0;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        left: 0;
+      }
+    }
+    .category_thumb {
+      display: none;
+    }
+  }
+}
+
+
+#categories_block_left {
+  li {
+    position: relative;
+    a {
+      display: block;
+      line-height: 30px;
+      padding: 5px 0px 5px 0px;
+      color: #666;
+    }
+    span.grower {
+      display: block;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      font-family:$font-icon;
+      text-shadow: none;
+      font-weight: normal;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      color: inherit;
+      &.OPEN,
+      &.CLOSE {
+        &:before {
+          content: "\f147";
+          display: block;
+          vertical-align: middle;
+          width: 30px;
+          height: 30px;
+         
+          line-height: 30px;
+          text-align: center;
+        }
+      }
+      &.CLOSE:before {
+        content: "\f196";
+      }
+    }
+    ul{padding-bottom: 10px;}
+    li {padding: 0 10px;
+          a{ padding: 0 30px 0 19px;
+               &:before{font-family: fontawesome;content: "\f105";margin-left: -12px;
+                    @include transition(all 400ms ease);
+                    @include opacity(0);
+                    }
+               &:hover:before{margin-left: 0px;@include opacity(100);}
+          }
+          span.grower {top: 1px;}
+         
+    }
+  }
+}

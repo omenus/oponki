@@ -1,0 +1,53 @@
+//@import "compass";
+
+@import '../../bootstrap_lib/variables';
+
+#search_block_top {margin: 0px;float: right;
+     #searchbox {padding: 0px;font-size: 0px;margin: 0px;
+        #search_query_top {padding: 4px 20px;width: 380px;height: 43px;color: #999;border: solid 1px #e1e1e1;border-right: none;box-shadow: none;display: inline-block;
+		&:focus {box-shadow: none;}
+	}
+        .button-search {height: 43px;width: 43px;padding: 0px;border-radius: 0px;border: none;color: #fff;display: inline-block;vertical-align: top;
+               .fa {margin: 0px;font-size: 18px;}
+        }
+     }
+}
+.ac_results {
+	background: $light-background;
+	border: 1px solid $base-border-color;
+	width: 271px;
+	margin-top: -1px;
+	li {
+		padding: 0 10px;
+		font-weight: normal;
+		color: #686666;
+		font-size: 13px;
+		line-height: 22px;
+		&.ac_odd {
+			background: $light-background;
+		}
+		&:hover, &.ac_over {
+			background: $base-box-bg;	
+		}
+	}
+}	
+
+form#searchbox {
+	position: relative;
+	label {
+		color: $base-text-color;
+	}
+	input#search_query_block {
+		margin-right:10px;
+		max-width:222px;
+		margin-bottom:10px;
+		display:inline-block;
+		float:left;
+	}
+	.button.button-small {
+		float:left;
+		i {
+			margin-right:0;
+		}
+	}
+}
